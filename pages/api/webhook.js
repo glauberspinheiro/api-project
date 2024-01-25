@@ -34,10 +34,4 @@ app.get('/webhook/list', (req, res) => {
   res.status(200).json({ data: receivedPayloads });
 });
 
-// Set the port for the server to listen on
-const port = 3000;
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
+export default app;
